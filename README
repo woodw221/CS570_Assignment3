@@ -1,0 +1,27 @@
+William Wood cssc1167, Nadim Tahmass cssc1158	
+CS570, Summer 2018
+Assignment #3, Multithread Alarm Clock
+README file
+
+All files are in the cssc1167 a3 directory and uploaded to blackboard through William Wood.
+
+Files Included: main.c, threadClocks.c, alarmClock.h, makefile, README.
+
+Compile instructions: use makefile by using make command or gcc -pthread -o tevent threadClocks.c main.c -I.
+
+Operating Instructions: Run using ./tevent , no additional command line arguments or
+						write a time in seconds for the alarm to run.
+
+Significant design decisions: Limited alarm time size to 20 digits as no one will hopefully ever want
+							  to run this alarm for that long. Included start time to show its running
+							  as long as expected.
+
+Extra features/algorithms/functionality: Our program prints the start time as an extra feature.
+										 No other extra functionality/algorithms used.
+
+Known Deficiencies or bugs: 	No major bugs or deficiencies known.
+
+Lessons Learned: Learned how pipe() works and how it can be used to work with threads.
+				 This knowledge can also be applied to fork() calls if implemented differently.
+				 Also tested how alarm() would work in this situation and it didn't work entirely
+				 as we wanted so we ended up not using it.
